@@ -31,7 +31,7 @@ Problema include elemente de jocuri de noroc (trageri aleatorii, pozitia necunos
 **Loviturile și damage-ul**:
    Fiecare glonț este verificat pentru a determina dacă lovește o zonă a inamicului:
    - Dacă $\ \text{glonțul} \in \text{zonă} \$, se aplică damage-ul specific zonei respective. Zonele sunt fidele hitbox-ului oficial din Counter-Strike, precum sunt și valorile de damage.
-   - Damage-ul total $\ D_{\text{total}} \$ este suma damage-ului acumulat de toate gloanțele.
+   - Damage-ul total $ D_{\text{total}} $ este suma damage-ului acumulat de toate gloanțele.
 
 **Probabilitatea de eliminare**:
    Evenimentul de succes este definit ca $\ D_{\text{total}} \geq 100 \$ (viața inamicului).
