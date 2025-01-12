@@ -20,25 +20,26 @@ Problema include elemente de jocuri de noroc (trageri aleatorii, pozitia necunos
 **Reprezentarea țintei**:
    Inamicul este reprezentat printr-un model geometric 2D care include zone specifice (cap, piept, mâini, stomac și picioare). Fiecare zonă are o formă și dimensiuni fixe:
    - Cap: cerc de rază $\( r_{\text{head}} \)$.
-   - Piept: dreptunghi de dimensiuni \( w_{\text{chest}} \times h_{\text{chest}} \).
-   - Mâini: dreptunghiuri verticale de dimensiuni \( w_{\text{arm}} \times h_{\text{arm}} \).
-   - Stomac: dreptunghi de dimensiuni \( w_{\text{stomach}} \times h_{\text{stomach}} \).
-   - Picioare: dreptunghiuri verticale de dimensiuni \( w_{\text{leg}} \times h_{\text{leg}} \).
+   - Piept: dreptunghi de dimensiuni $\( w_{\text{chest}} \times h_{\text{chest}} \)$.
+   - Mâini: dreptunghiuri verticale de dimensiuni $\( w_{\text{arm}} \times h_{\text{arm}} \)$.
+   - Stomac: dreptunghi de dimensiuni $\( w_{\text{stomach}} \times h_{\text{stomach}} \)$.
+   - Picioare: dreptunghiuri verticale de dimensiuni $\( w_{\text{leg}} \times h_{\text{leg}} \)$.
 
 **Poziția gloanțelor**:
-   Gloanțele sunt generate aleatoriu în interiorul unei zone de tragere (\( x \in [-1.5, 1.5], y \in [-1.5, 1.5] \)). Să ne imaginăm că acestea sunt proporțiile unei cutii de pe hărțile de Counter-Strike.
+   Gloanțele sunt generate aleatoriu în interiorul unei zone de tragere ($\( x \in [-1.5, 1.5], y \in [-1.5, 1.5] \)$). Să ne imaginăm că acestea sunt proporțiile unei cutii de pe hărțile de Counter-Strike.
 
 **Loviturile și damage-ul**:
    Fiecare glonț este verificat pentru a determina dacă lovește o zonă a inamicului:
-   - Dacă \( \text{glonțul} \in \text{zonă} \), se aplică damage-ul specific zonei respective. Zonele sunt fidele hitbox-ului oficial din Counter-Strike, precum sunt și valorile de damage.
-   - Damage-ul total \( D_{\text{total}} \) este suma damage-ului acumulat de toate gloanțele.
+   - Dacă $\( \text{glonțul} \in \text{zonă} \)$, se aplică damage-ul specific zonei respective. Zonele sunt fidele hitbox-ului oficial din Counter-Strike, precum sunt și valorile de damage.
+   - Damage-ul total $\( D_{\text{total}} \)$ este suma damage-ului acumulat de toate gloanțele.
 
 **Probabilitatea de eliminare**:
-   Evenimentul de succes este definit ca \( D_{\text{total}} \geq 100 \) (viața inamicului).
+   Evenimentul de succes este definit ca $\( D_{\text{total}} \geq 100 \) (viața inamicului).
    Probabilitatea de succes este estimată ca:
-   \[
+   
+   $$\[
    P(\text{eliminare}) = \frac{\text{Număr de simulări reușite}}{\text{Număr total de simulări}}
-   \]
+   \]$$
 
 5. **Metoda Monte Carlo**:
    - Generăm \( N \) simulări independente.
