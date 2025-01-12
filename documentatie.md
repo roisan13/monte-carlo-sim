@@ -19,8 +19,8 @@ Problema include elemente de jocuri de noroc (trageri aleatorii, pozitia necunos
 
 **Reprezentarea țintei**:
    Inamicul este reprezentat printr-un model geometric 2D care include zone specifice (cap, piept, mâini, stomac și picioare). Fiecare zonă are o formă și dimensiuni fixe:
-   - Cap: cerc de rază $\( r_{\text{head}} \)$.
-   - Piept: dreptunghi de dimensiuni $\( w_{\text{chest}} \times h_{\text{chest}} \)$.
+   - Cap: cerc de rază $\ r_{\text{head}} $.
+   - Piept: dreptunghi de dimensiuni $\ w_{\text{chest}} \times h_{\text{chest}} \$.
    - Mâini: dreptunghiuri verticale de dimensiuni $\( w_{\text{arm}} \times h_{\text{arm}} \)$.
    - Stomac: dreptunghi de dimensiuni $\( w_{\text{stomach}} \times h_{\text{stomach}} \)$.
    - Picioare: dreptunghiuri verticale de dimensiuni $\( w_{\text{leg}} \times h_{\text{leg}} \)$.
