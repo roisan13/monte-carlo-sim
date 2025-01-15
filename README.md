@@ -1,5 +1,6 @@
 # Proiect Probabilități & Statistică 2024-2025
 ---
+Video prezentare: https://youtu.be/Aj6E8oODAdw
 
 ### Componența echipei:
 - Cotivă David
@@ -11,5 +12,4 @@ Documentația proiectului se găsește in fișierul documentatie.pdf (in .md est
 
 ![Simulation GIF](simulation.gif)
 
-
-https://youtu.be/Aj6E8oODAdw
+![Simulation GIF](simulation_faster.gif)
